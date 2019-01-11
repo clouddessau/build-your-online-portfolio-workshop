@@ -1,2 +1,3 @@
 # portfolio-workshop-org
-Workshop materials for the workshop “Build your Online Portfolio“ @ Dessau Department of Design
+
+_Workshop materials for the workshop “Build your Online Portfolio“ @ [Dessau Department of Design](https://hs-anhalt.de/hochschule-anhalt/design/uebersicht.html)_
