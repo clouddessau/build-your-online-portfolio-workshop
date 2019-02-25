@@ -1,0 +1,33 @@
+<!doctype html>
+
+<!-- Made with <3 in Germany -->
+
+<html lang="en">
+  <head>
+    <title>Build your Online Portfolio &ndash; Workshop at Anhalt University of Applied Sciences</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="author" content="Johannes Jakob">
+    <meta name="description" content="Workshop at Anhalt University of Applied Sciences (Dessau Department of Design)">
+    <meta name="language" content="en">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="nav-li-active"><a href="/">Start</a></li>
+          <li><a href="/setup">Preparation</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Build your Online Portfolio</h1>
+    {{#section start multiple=true}}
+      <div>
+        <h2>{{question}}</h2>
+        <p>{{answer type=html editor=markdown}}</p>
+      </div>
+    {{/section}}
+    {{> footer}}
+  </body>
+</html>
