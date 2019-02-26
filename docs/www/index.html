@@ -11,23 +11,26 @@
     <meta name="author" content="Johannes Jakob">
     <meta name="description" content="Workshop at Anhalt University of Applied Sciences (Dessau Department of Design)">
     <meta name="language" content="en">
+    <link rel="stylesheet" href="/stylesheets/site.css" media="screen">
+    <link rel="mask-icon" href="/safari-tab-icon.svg" color="#222222" sizes="any">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li class="nav-li-active"><a href="/">Start</a></li>
-          <li><a href="/setup">Preparation</a></li>
-        </ul>
-      </nav>
-    </header>
-    <h1>Build your Online Portfolio</h1>
-    {{#section start multiple=true}}
-      <div>
-        <h2>{{question}}</h2>
-        <p>{{answer type=html editor=markdown}}</p>
-      </div>
-    {{/section}}
+    <main>
+      <section class="section-hero">
+        <p class="p-subheading">Workshop</p>
+        <h1>Build your Online Portfolio</h1>
+        <p class="p-heading-extension">-> with modern web technologies</p>
+        <p class="p-date">March 18 &ndash; 21, 2019</p>
+        <p class="p-location">Anhalt University of Applied Sciences (Dessau Department of Design)</p>
+      </section>
+      {{#section start multiple=true sortable=true}}
+        <div>
+          <h2>{{question}}</h2>
+          <p>{{answer type=html editor=markdown}}</p>
+        </div>
+      {{/section}}
+    </main>
     {{> footer}}
   </body>
 </html>

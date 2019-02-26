@@ -13,17 +13,24 @@
 // Variables
 
 $color__black: #222;
+$color__gray: #555;
+$color__gray-light: #bbb;
 $color__white: #fff;
+$color__gray-ultralight: #eee;
+$color__blue: #007bff;
+$color__blue-light: #5ac8fa;
+
+$size__max-width-content: 800px;
 
 // Base
 
 * {
-	margin: 0;
-	padding: 0;
-	color: $color__black;
-	text-decoration: none;
-	box-sizing: border-box;
-	outline: none
+  margin: 0;
+  padding: 0;
+  color: $color__black;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none
 }
 
 html {
@@ -31,6 +38,131 @@ html {
 }
 
 body {
-  background: $color__white;
-  font-size: 16px
+  background: $color__gray-ultralight;
+  font-size: 12pt
+}
+
+header,
+main,
+footer {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: $size__max-width-content
+}
+
+header {
+  padding: 2em 0;
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    li {
+      font-size: 1.2em;
+      font-weight: 500;
+      text-transform: uppercase;
+
+      a {
+        padding: .5em 1em;
+        color: $color__gray;
+        display: block
+      }
+    }
+  }
+}
+
+main {
+  div {
+    margin: 1em 0;
+    padding: 1.5em;
+    background: $color__white
+  }
+
+  h1 {
+    margin-bottom: .2em;
+    font-size: 2.2em;
+    line-height: 1
+  }
+
+  h2 {
+    margin-bottom: .5em;
+    font-size: 1.5em;
+    font-weight: 500
+  }
+
+  p {
+    line-height: 1.4
+  }
+
+  a {
+    color: $color__blue;
+
+    &:hover {
+      color: darken($color__blue, 20%)
+    }
+  }
+}
+
+footer p {
+  margin: 2em 0;
+  color: $color__gray
+}
+
+// Classes
+
+.nav-li-active {
+  position: relative;
+
+  &:after {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    content: "";
+    background: $color__black
+  }
+
+  a {
+    color: $color__black
+  }
+}
+
+.section-hero {
+  margin-top: 1em;
+  padding: 1.5em;
+  background: linear-gradient(to right, $color__blue 0%, $color__blue-light 100%);
+
+  h1, p {
+    color: $color__white
+  }
+
+  .p-subheading {
+    margin-bottom: .2em;
+    color: $color__white;
+    font-weight: 600;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    opacity: .6
+  }
+
+  .p-heading-extension {
+    font-weight: 300;
+    text-transform: uppercase
+  }
+
+  .p-date {
+    margin: 1em 0 .5em 0;
+    padding: .5em;
+    color: $color__blue;
+    font-size: 1.2em;
+    font-weight: 600;
+    background: $color__white;
+    display: inline-block
+  }
+
+  .p-location {
+    font-weight: 300
+  }
 }
