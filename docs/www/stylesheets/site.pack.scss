@@ -93,6 +93,12 @@ main {
       line-height: 1.2;
     }
 
+    h3 {
+      margin: 1em 0 .5em 0;
+      font-size: 1.5em;
+      font-weight: 500;
+    }
+
     a {
       color: $color__blue
     }
@@ -118,21 +124,6 @@ footer {
 p {
   margin-bottom: 1em;
   line-height: 1.5
-}
-
-input[type="radio"] {
-  display: none;
-
-  &:checked ~ label {
-    color: $color__blue
-  }
-}
-
-label {
-  color: $color__gray;
-  font-size: 1.2em;
-  font-weight: 500;
-  cursor: pointer
 }
 
 code {
@@ -189,20 +180,6 @@ code {
   p {
     margin-bottom: 1em;
     max-width: $size__max-width-content / 2
-  }
-}
-
-.div-input {
-  padding: 2em;
-  display: flex;
-  justify-content: flex-start;
-  
-  div {
-    padding: 0 1em;
-
-    &:first-child {
-      padding-left: 0
-    }
   }
 }
 
