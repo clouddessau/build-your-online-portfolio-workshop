@@ -16,6 +16,14 @@
     <link rel="icon" type="image/x-icon" href="/favicon.png">
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="nav-li-active"><a href="/">Start</a></li>
+          <li><a href="/setup">Preparation</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <section class="section-hero">
         <p class="p-subheading">Workshop</p>
@@ -27,7 +35,7 @@
       {{#section start multiple=true sortable=true}}
         <div>
           <h2>{{question}}</h2>
-          <p>{{answer type=html editor=markdown}}</p>
+          <p>{{answer type=html editor=html}}</p>
         </div>
       {{/section}}
     </main>
