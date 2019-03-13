@@ -1,0 +1,52 @@
+<!doctype html>
+
+<!-- Made with <3 in Germany -->
+
+<html lang="en">
+  <head>
+    <title>Preparation &ndash; Build your Online Portfolio &ndash; Workshop at Anhalt University of Applied Sciences</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="author" content="Johannes Jakob">
+    <meta name="description" content="Workshop at Anhalt University of Applied Sciences (Dessau Department of Design)">
+    <meta name="language" content="en">
+    <link rel="stylesheet" href="/stylesheets/site.css" media="screen">
+    <link rel="mask-icon" href="/safari-tab-icon.svg" color="#222222" sizes="any">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Start</a></li>
+          <li class="nav-li-active"><a href="/setup">Preparation</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-intro">
+        {{setup-intro-text label="Preparation Introduction" type=html editor=markdown}}
+      </section>
+      <div class="div-input">
+        <div>
+          <input type="radio" id="input-mac" name="input-os" value="macOS" checked>
+          <label for="input-mac">macOS</label>
+        </div>
+        <div>
+          <input type="radio" id="input-win" name="input-os" value="Windows">
+          <label for="input-win">Windows</label>
+        </div>
+      </div>
+      {{#section setup label="Preparation" multiple=true sortable=true}}
+        <div class="{{class}}">
+          <h2>{{heading}}</h2>
+          <div>
+            {{instructions type=html editor=html}}
+          </div>
+        </div>
+      {{/section}}
+    </main>
+    {{> footer}}
+  </body>
+</html>
