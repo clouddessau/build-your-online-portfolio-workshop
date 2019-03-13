@@ -28,18 +28,8 @@
       <section class="section-intro">
         {{setup-intro-text label="Preparation Introduction" type=html editor=markdown}}
       </section>
-      <div class="div-input">
-        <div>
-          <input type="radio" id="input-mac" name="input-os" value="macOS" checked>
-          <label for="input-mac">macOS</label>
-        </div>
-        <div>
-          <input type="radio" id="input-win" name="input-os" value="Windows">
-          <label for="input-win">Windows</label>
-        </div>
-      </div>
       {{#section setup label="Preparation" multiple=true sortable=true}}
-        <div class="{{class}}">
+        <div>
           <h2>{{heading}}</h2>
           <div>
             {{instructions type=html editor=html}}
