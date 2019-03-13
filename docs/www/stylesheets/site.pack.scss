@@ -87,18 +87,6 @@ main {
       border: 0
     }
 
-    h2 {
-      margin-bottom: .5em;
-      font-size: 1.5em;
-      line-height: 1.2;
-    }
-
-    h3 {
-      margin: 1em 0 .5em 0;
-      font-size: 1.5em;
-      font-weight: 500;
-    }
-
     a {
       color: $color__blue
     }
@@ -119,6 +107,37 @@ footer {
       color: $color__black
     }
   }
+}
+
+article {
+  padding: 2em;
+  border-bottom: 1px solid $color__gray-light;
+
+  h1 {
+    margin-bottom: .5em
+  }
+
+  p:last-child {
+    margin-bottom: 0
+  }
+}
+
+h1 {
+  margin-bottom: .1em;
+  font-size: 2.5em;
+  font-weight: 600
+}
+
+h2 {
+  margin-bottom: .5em;
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+h3 {
+  margin: 1em 0 .5em 0;
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
 p {
@@ -144,12 +163,6 @@ code {
 .section-hero {
   padding: 2em 2em 4em 2em;
   border-bottom: 1px solid $color__gray-light;
-
-  h1 {
-    margin-bottom: .1em;
-    font-size: 2.5em;
-    font-weight: 600
-  }
 
   .p-heading-extension {
     margin-bottom: 2em;
@@ -188,6 +201,14 @@ code {
   color: $color__blue;
   font-weight: 500;
   display: block
+}
+
+.a-mail {
+  font-weight: 500;
+
+  &:after {
+    content: attr(data-name) "@" attr(data-domain) "." attr(data-tld)
+  }
 }
 
 // Size adaptations
