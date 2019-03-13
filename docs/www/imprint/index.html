@@ -1,0 +1,36 @@
+<!doctype html>
+
+<!-- Made with <3 in Germany -->
+
+<html lang="en">
+  <head>
+    <title>Imprint &ndash; Build your Online Portfolio &ndash; Workshop at Anhalt University of Applied Sciences</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="author" content="Johannes Jakob">
+    <meta name="language" content="en">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="/stylesheets/site.css" media="screen">
+    <link rel="mask-icon" href="/safari-tab-icon.svg" color="#222222" sizes="any">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Start</a></li>
+          <li><a href="/setup">Preparation</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      {{#section imprint}}
+        <article>
+          {{text type=html editor=html}}
+        </article>
+      {{/section}}
+    </main>
+    {{> footer}}
+  </body>
+</html>
