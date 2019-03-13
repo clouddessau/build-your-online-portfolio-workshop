@@ -9,6 +9,7 @@
 // Imports
 
 @import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:500');
 
 // Variables
 
@@ -132,6 +133,14 @@ label {
   font-size: 1.2em;
   font-weight: 500;
   cursor: pointer
+}
+
+code {
+  margin-bottom: 1em;
+  padding: .5em .6em;
+  font-family: 'Roboto Mono', monospace;
+  background: $color__gray-light;
+  display: inline-block
 }
 
 // Classes
