@@ -1,7 +1,6 @@
 {
   "name": "docs",
-  "vapid": {
-  },
+  "vapid": {},
   "scripts": {
     "start": "vapid start ."
   },
