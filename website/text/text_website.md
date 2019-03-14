@@ -46,31 +46,47 @@ Once you created your GitHub account, you can use [GitHub Desktop](https://deskt
 
 [-> Download GitHub Desktop](https://desktop.github.com)
 
-### macOS
-
 #### Installing Vapid (+ Node.js)
 
 You will use [Vapid](https://vapid.com), a straightforward and easy-to-use content management system, to add content to your portfolio and manage it. To work with Vapid on your computer, you have to install [Node.js](https://nodejs.org) first. Node.js is the framework Vapid runs on.
 
-### Windows
+##### macOS
 
-#### Installing Vapid (+ Node.js)
+First, determine if you have the application “Xcode” installed on your computer. If the app is located in the “Applications” folder, skip the first step. If Xcode is not installed, search for the app “Terminal” and open it. Type/Paste the following and hit Enter:
 
-You will use [Vapid](https://vapid.com), a straightforward and easy-to-use content management system, to add content to your portfolio and manage it. To work with Vapid on your computer, you have to install [Node.js](https://nodejs.org) first. Node.js is the framework Vapid runs on.
+```xcode-select --install```
+
+A dialog will appear, asking if you want to install the command line developer tools. Click on “Install”.
+
+After completing the installation, go back to Terminal, type/paste the following and hit Enter:
+
+```curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash```
+
+This will install [nvm](https://github.com/creationix/nvm) (Node Version Manager) that is used to manage different Node.js versions. You will only need one, so type/paste the following and hit Enter when the installation is complete:
+
+```nvm i 8```
+
+This will install version 8 of Node.js. When Terminal tells you that the installation is complete, close the Terminal window and open a new one by choosing “Shell” -> “New Window” from the menu bar. You can now do the final step and install Vapid using [npm](https://npmjs.com) (Node Package Manager) that was installed alongside Node.js. Type/Paste the following and hit Enter:
+
+```npm i -g @vapid/cli```
+
+This process can take a few minutes.
+
+##### Windows
 
 First, download [nvm for Windows](https://github.com/coreybutler/nvm-windows) (Node Version Manager) and install it using the installer.
 
 [-> Download nvm for Windows](https://github.com/coreybutler/nvm-windows/releases/download/1.1.7/nvm-setup.zip)
 
-After completing the installation, search for the app “Command Prompt” (“Eingabeaufforderung” in German) and open it. Type the following and hit Enter:
+After completing the installation, search for the app “Command Prompt” (“Eingabeaufforderung” in German) and open it. Type/Paste the following and hit Enter:
 
 ```nvm install 8```
 
-This will install version 8 of Node.js. When the command prompt tells you that the installation is complete, type the following and hit Enter to enable Node.js:
+This will install version 8 of Node.js. When Command Prompt tells you that the installation is complete, type/paste the following and hit Enter to enable Node.js:
 
 ```nvm use 8.15.1```
 
-You can now do the final step and install Vapid using [npm](https://npmjs.com) (Node Package Manager) that was installed alongside Node.js. Type the following and hit Enter:
+You can now do the final step and install Vapid using [npm](https://npmjs.com) (Node Package Manager) that was installed alongside Node.js. Type/Paste the following and hit Enter:
 
 ```npm i -g @vapid/cli```
 
