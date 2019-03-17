@@ -7,9 +7,15 @@ $color__gray-ultralight: #eee;
 $color__blue: #007bff;
 $color__blue-light: #5ac8fa;
 
+
+iframe{
+    border: none;
+}
+
+
 .w3-main{
-    margin: 2em auto;
-    max-width: 1024px;
+    // margin: 1px;
+    // max-width: 1024px;
     
 
     hr{
