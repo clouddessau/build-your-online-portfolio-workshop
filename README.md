@@ -4,6 +4,14 @@ _Workshop materials for the workshop “Build your Online Portfolio“ @ [Dessau
 
 ## March 18-21, 2019
 
+### Learning Resources
+
+- [W3Schools](https://w3schools.com) (HTML, CSS, JavaScript)
+- [Awesome CSS Learning](https://github.com/micromata/awesome-css-learning) (CSS)
+- [CSS-Tricks](https://css-tricks.com) (CSS)
+- [Vapid Documentation](https://docs.vapid.com) (Vapid)
+- [MDN web docs](https://developer.mozilla.org) (HTML, CSS, JavaScript; Reference)
+
 ### Schedule
 
 #### Monday, March 18
