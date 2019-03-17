@@ -14,6 +14,7 @@ _Workshop materials for the workshop “Build your Online Portfolio“ @ [Dessau
 - translate sketches into fundamental HTML structure
 - create GitHub repository
 - Vapid basics (if time left)
+- Git basics (if time left)
 - add Vapid templates to HTML structure (if time left)
 
 #### Tuesday, March 19
