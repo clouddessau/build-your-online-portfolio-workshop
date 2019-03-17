@@ -2,10 +2,7 @@
 $color__black: #222;
 $color__gray: #555;
 $color__gray-light: #F0F0F0;
-$color__white: #fff;
-$color__gray-ultralight: #eee;
-$color__blue: #007bff;
-$color__blue-light: #5ac8fa;
+
 
 
 #iFrame1{
@@ -99,7 +96,7 @@ summary{
     font-size: 15px;
 }
 summary:hover{
-    background:#eeeeee;
+    background:$color__gray-light;
 }
 
 details[open] summary:hover{
