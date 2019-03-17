@@ -12,6 +12,23 @@ _Workshop materials for the workshop “Build your Online Portfolio“ @ [Dessau
 - [Vapid Documentation](https://docs.vapid.com) (Vapid)
 - [MDN web docs](https://developer.mozilla.org) (HTML, CSS, JavaScript; Reference)
 
+### Example Portfolios
+
+- [Ryan Putnam](https://ryanputn.am)
+- [Frederique Matti](https://frederiquematti.com)
+- [Aaron Covrett](http://aaroncovrett.com)
+- [Verena Mischelitsch](https://verenamichelitsch.com)
+- [Timothy J. Reynolds](https://turnislefthome.com)
+- [Lily Nishita](https://lilynishita.com)
+- [Alex Vanderzon](http://alexvanderzon.com)
+- [Lauren Nielsen](http://lncreativestudio.com)
+- [Timo Kuilder](https://timokuilder.com)
+- [Nina Limarev](https://ninalimarev.com)
+- [Tobias van Schneider](https://vanschneider.com)
+- [Shawna X](https://shawna-x.com)
+- [David McLeod](http://davidmcleod.com)
+- [Maryanne Nguyen](https://maryannemade.com)
+
 ### Schedule
 
 #### Monday, March 18
