@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+$color__black: #222;
+$color__gray: #555;
+$color__gray-light: #F0F0F0;
+
+
+
+#iFrame1{
+    margin: 2em;
+    width: calc(100% - 4em);
+    height: calc(100vh - 200px);
+    border: none;
+}
+
+
+.w3-main{
+    // margin: 1px;
+    // max-width: 1024px;
+    
+
+    hr{
+        margin: 2em 0;
+        border: 1px solid $color__gray;
+    }
+
+    iframe{
+        border: none;
+    }
+}
+
+.w3-btn{
+    display: none;
+}
+
+.nextprev{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .w3-btn{
+        display: block;
+    }
+}
+
+.w3-code{
+    font-family: 'Roboto Mono';
+    font-weight: 300;
+    background-color: $color__gray;
+    padding: 1em;
+}
+
+
+
+#w3-exerciseform{
+    display: none;
+}
+
+
+
+
+
+// EXPANDING PANEL
+
+details{
+    border-top: 1px solid $color__gray;
+    background:$color__gray-light;
+    font-size:16px;
+    border-bottom:1px solid #e0e0e0;
+    //   box-shadow:0 0 2px rgba(0,0,0,0.12),0 2px 4px rgba(0,0,0,0.24);
+    display:flex; }
+
+details div.content{
+    // padding:0px 24px 24px 24px;
+}
+
+details[open] summary:after {
+    color:$color__gray-light;
+    content: "expand_less";
+    font-family: 'Material Icons';
+}
+details[open]{
+    // w:16px;
+    // margin-bottom:16px;
+    border:none;
+    border-top: 1px solid $color__gray;
+
+
+}
+
+
+summary{
+    outline:none;
+    cursor: pointer;
+    padding: 16px 24px;
+    color:#212121;
+    position: relative;
+    font-size: 15px;
+}
+summary:hover{
+    background:$color__gray-light;
+}
+
+details[open] summary:hover{
+    background:none;
+}
+summary ul {
+    padding-left: 0;
+    list-style: none;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+summary ul li{
+     flex: 1 100%;
+     flex-flow: row wrap;
+}
+summary ul li span{
+      display: block;
+      font-size: 12px;
+      w: 6px;
+      opacity: .75;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+summary::after {
+    content: "expand_more";
+    font-family: 'Material Icons';
+    color: #9e9e9e;
+    font-size: 1.5em;
+    padding: 0;
+    text-align: center;
+    w: 0;
+    position: absolute;
+    top: calc(50% - 12px);
+    bottom: 0;
+    right: 0;
+    width: 6%;
+}  
